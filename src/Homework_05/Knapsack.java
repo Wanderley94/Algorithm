@@ -60,18 +60,5 @@ public class Knapsack {
         return new Solution(itemsSolution, matrix[NB_ITEMS][capacity]);
     }
 
-    public static void main(String[] args) {
-
-        Item[] items = {new Item("Ноутбук", 4, 12),
-                new Item("Бинокль", 2, 1),
-                new Item("МP3 плеер", 2, 2),
-                new Item("Детская игрушка", 1, 1),
-                new Item("Телевизор", 10, 4)};
-
-        Knapsack knapsack = new Knapsack(items, 15);
-        knapsack.display();
-        Solution solution = knapsack.solve();
-        solution.display();
-    }
 
 }
